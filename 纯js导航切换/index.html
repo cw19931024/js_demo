@@ -3,31 +3,103 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<style type="text/css">
-			a{text-decoration: none;}
-			#test{width: 100px;height: 100px;}
-			.nams{background:red;border:1px solid yellow;}
-			.container{width: 1000px;margin: 0 auto;}
-			.nav{width: 100%;}
-			.tab{height: 40px;width: 120px;float: left;list-style-type: none;line-height: 40px;text-align: center;background: slategrey;margin: 0 10px;}
-			.tab a{color: white;display: block;width: 100%;}
-			.active{background: saddlebrown;}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	</head>
 	<body>
 		<div class="container">
 			<ul class="nav" id="nav">
 				<li class="tab active"><a href="#">导航</a></li>
-				<li class="tab"><a href="#">导航</a></li>
-				<li class="tab"><a href="#">导航</a></li>
-				<li class="tab"><a href="#">导航</a></li>
-				<li class="tab"><a href="#">导航</a></li>
+				<li class="tab">
+					<a href="#">导航</a>
+					<ul class="chil_nav">
+						<li>
+							<a href="#">测试</a>
+							<ul class="chils_nav">
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">测试</a>
+							<ul class="chils_nav">
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">测试</a>
+							<ul class="chils_nav">
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">测试</a>
+							<ul class="chils_nav">
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">测试</a>
+							<ul class="chils_nav">
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+								<li><a href="#">测试</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="tab">
+					<a href="#">导航</a>
+					<ul class="chil_nav">
+						<li><a href="#">测试</a></li>
+						<li><a href="#">测试</a></li>
+						<li><a href="#">测试</a></li>
+						<li><a href="#">测试</a></li>
+						<li><a href="#">测试</a></li>
+					</ul>
+				</li>
+				<li class="tab">
+					<a href="#">导航</a>
+					<ul class="chil_nav">
+						<li><a href="#">测试</a></li>
+						<li><a href="#">测试</a></li>
+						<li><a href="#">测试</a></li>
+						<li><a href="#">测试</a></li>
+						<li><a href="#">测试</a></li>
+					</ul>
+				</li>
+				<li class="tab">
+					<a href="#">导航</a>
+					<ul class="chil_nav">
+						<li><a href="#">测试</a></li>
+						<li><a href="#">测试</a></li>
+						<li><a href="#">测试</a></li>
+						<li><a href="#">测试</a></li>
+						<li><a href="#">测试</a></li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 	</body>
 	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
-		var tbs = document.getElementById("nav").getElementsByTagName("li");
+		var tbs = document.getElementById("nav").getElementsByClassName("tab");
 		nav_cw(tbs);
 	</script>
 </html>

@@ -1,1 +1,66 @@
+html,
+body {
+  background: steelblue;
+}
+* {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.container .nav {
+  width: 100%;
+}
+.container .nav .tab {
+  height: 40px;
+  width: 120px;
+  float: left;
+  list-style-type: none;
+  line-height: 40px;
+  text-align: center;
+  background: slategrey;
+  margin: 0 10px;
+}
+.container .nav .tab a {
+  color: white;
+  display: block;
+  width: 100%;
+}
+.container .nav .tab .chil_nav {
+  display: none;
+  background: white;
+}
+.container .nav .tab .chil_nav li {
+  position: relative;
+}
+.container .nav .tab .chil_nav li a {
+  color: black;
+}
+.container .nav .tab .chil_nav li a:hover {
+  background: salmon;
+}
+.container .nav .tab .chil_nav li .chils_nav {
+  position: absolute;
+  right: -120px;
+  top: 0;
+  background: #F0AD4E;
+  display: none;
+  width: 120px;
+}
+.container .nav .tab .chil_nav li:hover .chils_nav {
+  display: block;
+}
+.container .nav .tab:hover {
+  background: saddlebrown;
+}
+.container .nav .tab:hover .chil_nav {
+  display: block;
+}
+.container .active {
+  background: saddlebrown !important;
+}
 /*# sourceMappingURL=index.css.map */
