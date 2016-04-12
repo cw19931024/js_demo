@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>	
+	<script type="text/javascript">
+	
+	var ele=[];
+	document.onkeydown = function(event) {		
+    var event = event ? event: window.event;
+    var keyCode = event.keyCode ? event.keyCode: event.which;
+    var enterKey = 65;
+    var ctrlKey = 68;
+    if (keyCode == enterKey) {
+        ele[enterKey] = true;
+    } 
+    if (keyCode == ctrlKey) {
+        ele[ctrlKey] = true;
+    }
+
+    var t = setTimeout(function() {
+    	console.log(ele[enterKey]+"+"+ele[ctrlKey])
+        if (ele[enterKey] && ele[ctrlKey]) {
+            alert('ctrl+enter');
+        }
+        t = null;
+        ele = [];
+    },
+    200);
+}
+	</script>
+	<div class="test">
+		<ul>
+			<li class="test1"></li>
+		</ul>
+	</div>
+	
+</html>

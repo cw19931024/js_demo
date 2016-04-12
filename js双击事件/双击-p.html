@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>key</title>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+</head>
+<body>
+	<p id='p'></p>
+	<script>
+		var keyT;
+		window.onkeydown = function(e){
+			var timeout;
+			if(!keyT){
+				keyT=true;
+				if(e.keyCode==65){
+					/*p.innerHTML="你单击了a";*/
+					timeout=setTimeout(function(){
+						keyT=false;
+					},200)
+				}
+			}else{
+				keyT=false;
+				if(e.keyCode==65){
+					p.innerHTML="你双击了a";
+				}
+			}
+		}
+	</script>
+</body>
+</html>
