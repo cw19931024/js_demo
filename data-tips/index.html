@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>data-tips</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/data-tips.css">
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">按钮的使用</div>
+			<div class="panel-body">
+				<a href="#" data-tips="我还可以这样" data-postion="left" class="btn btn-default">提示</a>
+				<a href="#" data-tips="我也可以这样" data-postion="top" class="btn btn-success">提示</a>
+				<a href="#" data-tips="我还可以这样" data-postion="bottom"class="btn btn-primary">提示</a>
+				<a href="#" data-tips="我也能可以这样" data-postion="right"  class="btn btn-info">提示</a>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/data-tips.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("[data-tips]").hover(function() {				
+				$(this).cwtips();			
+			});
+		})
+	</script>
+</html>
