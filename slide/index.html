@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>		
+	</head>
+	<body>
+		<div class="container">
+			<div class="slide">
+				<ul class="img">
+					<li><img src="img/index_1.jpg"/></li>
+					<li><img src="img/index_2.jpg"/></li>
+					<li><img src="img/index_3.jpg"/></li>
+					<li><img src="img/index_4.jpg"/></li>
+					<li><img src="img/index_5.jpg"/></li>
+				</ul>
+				<ul class="page"></ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/slide.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".slide").cw_slide({
+			time:3000,
+			page:true,
+			btn:true
+		});
+	</script>
+</html>
